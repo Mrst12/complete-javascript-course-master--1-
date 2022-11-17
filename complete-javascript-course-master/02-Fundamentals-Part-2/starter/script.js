@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 function logger() {
     console.log('My name is Lisa');
 }
@@ -22,3 +22,20 @@ console.log(fruitProcessor(5, 0));//result of running the function
 
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
+*/
+
+//function declarations vs expressions
+//declaration
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
+
+//expression
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+console.log(age2);
