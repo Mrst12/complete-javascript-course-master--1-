@@ -167,3 +167,55 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 */
+
+//Introduction to arrays
+const friends1 = 'Michael';
+const friends2 = 'Steven';
+const friends3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+//array as a function
+const y = new Array(1991, 1984, 2008, 2020);
+
+//to get the first element
+console.log(friends[0]);
+
+//to find how many elements in an array
+console.log(friends.length);
+
+//to get last element in an array
+console.log(friends[friends.length - 1]);
+
+// to change/mutate an array
+friends[2] = 'Jay';
+console.log(friends);
+
+//arrays can have any types
+// const lisa = ['Lisa', 'Tinmurth', 2022 - 1978];
+// console.log(lisa);
+
+// const firstName = 'Lisa';
+// const lisa = [firstName, 'Tinmurth', 2022 - 1978];
+// console.log(lisa);
+
+//arrays inside
+const firstName = 'Lisa';
+const lisa = [firstName, 'Tinmurth', 2022 - 1978, 'student', friends];
+console.log(lisa);
+
+//exercise
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+// calculate ages of 1st 2nd and last element
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
