@@ -167,7 +167,7 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 */
-
+/*
 //Introduction to arrays
 const friends1 = 'Michael';
 const friends2 = 'Steven';
@@ -199,7 +199,7 @@ console.log(friends);
 // const firstName = 'Lisa';
 // const lisa = [firstName, 'Tinmurth', 2022 - 1978];
 // console.log(lisa);
-
+/*
 //arrays inside
 const firstName = 'Lisa';
 const lisa = [firstName, 'Tinmurth', 2022 - 1978, 'student', friends];
@@ -219,3 +219,38 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+
+//basic array operations(methods)
+/*
+// add element to end of array use push()
+const friends = ['Michael', 'Steven', 'Peter'];
+//friends.push('Jay');
+
+const newLength = friends.push('Jay');
+console.log(newLength);
+console.log(friends);
+
+//add elements to the beginning using unshift
+friends.unshift('John'); console.log(friends);
+
+//remove last element
+friends.pop();
+console.log(friends);
+
+//remove first element using shift
+friends.shift();
+console.log(friends);
+
+//to find the index of an element using indexOf
+console.log(friends.indexOf('Steven'));
+
+//includes returns true if in and false if not
+console.log(friends.includes('Steven'));
+
+//can use it in a conditional
+if (friends.includes('Steven')) {
+    console.log('you have a friend called Steven')
+}
+*/
+
