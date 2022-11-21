@@ -254,7 +254,7 @@ if (friends.includes('Steven')) {
 }
 */
 
-/*coding challenge 2 
+/*coding challenge 2
 Steven is still building his tip calculator, using the same rules as before: Tip 15% of
 the bill if the bill value is between 50 and 300, and if the value is different, the tip is
 20%.
@@ -272,9 +272,9 @@ Test data: 125, 555 and 44
 Hint: Remember that an array needs a value in each position, and that value can
 actually be the returned value of a function! So you can just call a function as array
 values (so don't store the tip values in separate variables first, but right in the new
-array) 
+array)
 */
-
+/*
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
@@ -284,3 +284,23 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total);
+*/
+
+//intro to objects
+//array eg
+const lisaArray = [
+    'Lisa',
+    'Tinmurth',
+    2022 - 1978,
+    'student',
+    ['Michael', 'Peter', 'Steven']
+];
+
+//same in an object
+const lisa = {
+    firstName: 'Lisa',
+    lastName: 'Tinmurth',
+    age: 2022 - 1978,
+    job: 'student',
+    friends: ['Michael', 'Peter', 'Steven']
+};
