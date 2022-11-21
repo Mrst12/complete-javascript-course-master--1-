@@ -339,3 +339,50 @@ console.log(lisa);
 
 console.log(`${lisa.firstName} has ${lisa.friends.length} friends, her best friend is ${lisa.friends[0]}`);
 */
+
+//object methods
+// const lisa = {
+//     firstName: 'Lisa',
+//     lastName: 'Tinmurth',
+//     birthYear: 1978,
+//     job: 'student',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+// calcAge: function (birthYear) {
+//     return 2037 - birthYear;
+// }
+
+// calcAge: function () {
+//     console.log(this);
+//     return 2037 - this.birthYear;
+// }
+
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     }
+// };
+
+// to access the function
+//console.log(lisa.calcAge());
+//console.log(lisa['calcAge'](1978));
+//console.log(lisa.age);
+
+//challenge to write Lisa is a 44 year old student and she has a/ no drivers license.
+const lisa = {
+    firstName: 'Lisa',
+    lastName: 'Tinmurth',
+    birthYear: 1978,
+    job: 'student',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    calcAge: function () {
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job} and she has ${this.hasDriversLicense ? 'a drivers licence' : 'no drivers licence'}`;
+    }
+}
+
+console.log(lisa.getSummary());
