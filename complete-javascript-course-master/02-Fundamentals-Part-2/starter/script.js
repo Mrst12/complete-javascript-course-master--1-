@@ -288,6 +288,7 @@ console.log(total);
 
 //intro to objects
 //array eg
+/*
 const lisaArray = [
     'Lisa',
     'Tinmurth',
@@ -295,8 +296,10 @@ const lisaArray = [
     'student',
     ['Michael', 'Peter', 'Steven']
 ];
+*/
 
 //same in an object
+/*
 const lisa = {
     firstName: 'Lisa',
     lastName: 'Tinmurth',
@@ -304,3 +307,35 @@ const lisa = {
     job: 'student',
     friends: ['Michael', 'Peter', 'Steven']
 };
+console.log(lisa);
+
+//getting a property with dot notation
+console.log(lisa.lastName);
+
+//with brackets
+console.log(lisa['lastName']);
+
+const nameKey = 'Name';
+console.log(lisa['first' + nameKey]);
+console.log(lisa['last' + nameKey]);
+
+//example of [] notation
+// const interestedIn = prompt('What do you want to know about Lisa? choose between firstName, lastName, age, job and friends');
+
+// if (lisa[interestedIn]) {
+//     console.log(lisa[interestedIn]);
+// } else {
+//     console.log(`wrong request, choose between firstName, lastName, age, job and friends`)
+// }
+
+//adding using dot
+lisa.location = 'England';
+
+//using []
+lisa['email'] = 'LisaTinmurth@hotmail.com';
+console.log(lisa);
+
+//challenge write out lisa has 3 friends and her best friend is Michael.
+
+console.log(`${lisa.firstName} has ${lisa.friends.length} friends, her best friend is ${lisa.friends[0]}`);
+*/
