@@ -139,7 +139,7 @@ Test data:
 //how to use dots to seperate each element
 // how to start the array at 1 instead of 0
 // add the three dots
-
+/*
 const tempArray1 = [17, 21, 23];
 const tempArray2 = [12, 5, -5, 0, 4];
 
@@ -151,3 +151,4 @@ const printForecast = function (arr) {
   console.log('...' + str);
 };
 printForecast(tempArray1);
+*/
